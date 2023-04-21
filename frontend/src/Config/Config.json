@@ -1,0 +1,7 @@
+{
+    "api": {
+        "paymentApi": "http://localhost:5000/payment",
+        "userApi": "http://localhost:5000/user/",
+        "resApi": "http://localhost:5000/response"
+    }
+}

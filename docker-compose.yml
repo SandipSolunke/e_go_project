@@ -1,0 +1,46 @@
+version: "3"
+services:
+  node:
+    image: "node_backend_e_go"
+    build:
+      dockerfile: Dockerfile
+      context: ./backend
+    command: "npm start"
+    ports:
+      - 5000:5000
+
+    depends_on:
+      - mongo
+
+    networks:
+      - internalnet
+
+  react:
+    image: "react_frontend_e_go"
+    build:
+      dockerfile: Dockerfile
+      context: ./frontend
+    command: "npm start"
+    ports:
+      - 3000:3000
+
+    depends_on:
+      - node
+
+    networks:
+      - internalnet
+
+  mongo:
+    image: mongo:6.0
+    volumes:
+      - ~/mongo:/data/db
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_DATABASE=testdb
+    networks:
+      - internalnet
+
+networks:
+  internalnet:
+    driver: bridge

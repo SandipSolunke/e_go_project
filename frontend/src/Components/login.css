@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body{
+    background: var(--color-primary);
+}
+#login .wrapper{
+  padding-top: 7rem;
+  width: 330px;
+  margin: 50px auto;
+  background: var(--color-light);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+#login h1{
+  font-size: 2rem;
+  color: #07001f;
+  margin-bottom: 2rem;
+}
+#login p{
+  margin-bottom: 1.7rem;
+}
+#login form input{
+  width: 85%;
+  outline: none;
+  border: none;
+  background: #dfe9f5;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+#login .recover{
+  text-align: right;
+  font-size: 0.8rem;
+  margin: 0.2rem 1.7rem 0 0;
+}
+#login .recover a{
+  text-decoration: none;
+  color: #07001f;
+}
+#login .btn2{
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  padding: 8px 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  width: 85%;
+  background: var(--color-primary);
+  color: #fff;
+  cursor: pointer;
+}
+#login .btn2:hover{
+  background: white;
+  color: var(--color-primary);
+}
+#login .or{
+  font-size: 0.8rem;
+  margin-top: 1.5rem;
+}
+#login .icons i{
+  color: var(--color-primary);
+  padding: 00.8rem 1.5rem;
+  border-radius: 10px;
+  margin-left: .9rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: 2px solid #dfe9f5;
+}
+#login .icons i:hover{
+  color: wheat;
+  background: var(--color-primary);
+  transition: 1s;
+}
+#login .not-member{
+  font-size: 0.8rem;
+  margin-top: 1.4rem;
+}
+#login .not-member a{
+  color: tomato;
+  text-decoration: none;
+}
+#login a:hover{
+  text-decoration: underline;
+}

@@ -1,0 +1,24 @@
+.products-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 20px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.product-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
