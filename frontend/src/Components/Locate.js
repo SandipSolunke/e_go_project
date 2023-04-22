@@ -1,14 +1,13 @@
-import React, { Component, useState } from "react";
+import React, { Component, useState, useEffect } from "react";
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps";
 import Navbar from './Navbar'
-import dotenv from 'dotenv';
-dotenv.config();
 
 
 const Locate = () => {
 
-  const getEmail=localStorage.getItem('email')
+  const getEmail = localStorage.getItem('email')
 
+  const [userLocation, setUserLocation] = useState(null);
 
   const [bikes, setBikes] = useState([
     {
@@ -23,14 +22,34 @@ const Locate = () => {
     }
   ])
 
-  console.log("email :",getEmail)
+  useEffect(() => {
+
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(position => {
+        const { latitude, longitude } = position.coords;
+        setUserLocation({ lat: latitude, lng: longitude });
+      }, error => {
+        // handle error case
+        console.error(error);
+        setUserLocation({ lat: 19.143105, lng: 77.307600 });
+      }
+      );
+    }
+
+    else {
+      setUserLocation({ lat: 19.143105, lng: 77.307600 });
+    }
+
+  }, []);
+
+  console.log("email :", getEmail)
 
   const MapComponent = withScriptjs(
     withGoogleMap(() => (
       <GoogleMap
         defaultZoom={15}
-        defaultCenter={{ lat: 19.142089, lng: 77.319503 }} // San Francisco
-        apiKey={process.env.GOOGLE_API_KEY}
+        defaultCenter={userLocation} // San Francisco
+        apiKey='key'
       >
         {bikes.map((bike) => (
           <Marker
@@ -39,16 +58,26 @@ const Locate = () => {
             onClick={() => this.props.handleMarkerClick(bike.id)}
           />
         ))}
+
+        {userLocation && (
+          <Marker
+            position={userLocation}
+            icon={{
+              url: "https://maps.google.com/mapfiles/kml/shapes/man.png",
+              scaledSize: new window.google.maps.Size(48, 48)
+            }}
+          />
+        )}
       </GoogleMap>
     ))
   );
 
   return (
     <div>
-      <Navbar email={getEmail}/>
+      <Navbar email={getEmail} />
       <MapComponent
         isMarkerShown
-        googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${process.env.GOOGLE_API_KEY}`}
+        googleMapURL={`https://maps.googleapis.com/maps/api/js?key=key`}
         loadingElement={<div style={{ height: "100%" }} />}
         containerElement={<div style={{ height: "100vh" }} />}
         mapElement={<div style={{ height: "100%" }} />}
