@@ -56,7 +56,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="copyright">
-                    <small> &copy;Powered By Nakul Tiwari</small>
+                    <small> &copy;Powered By E-Go</small>
                 </div>
             </footer>
 
