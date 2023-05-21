@@ -20,7 +20,7 @@ const Navbar = (props) => {
 
 
     return (
-        <div style={{ marginBottom: "100px" }}>
+        <div style={{ marginBottom: "100px",backgroundColor:"black" }}>
             <nav>
                 <div className="container nav_container">
                     <ul className="nav_items">
@@ -32,7 +32,11 @@ const Navbar = (props) => {
                         <li><a onClick={() => navigate('/locate_bike')} style={{ cursor: "pointer" }}>Locate Bike</a></li>
                         {
                             // console.log(" flag :",login)
-                            login === false ? <></> : <li><a onClick={() => navigate('/products')} style={{ cursor: "pointer" }}>Products</a></li>
+                            login === false ? <></> : 
+                            <>
+                            <li><a onClick={() => navigate('/products')} style={{ cursor: "pointer" }}>Products</a></li>
+                            <li><a onClick={() => navigate('/unlock_bike')} style={{ cursor: "pointer" }}>Unlock Bike</a></li>
+                            </>
                         }
                     </ul>
                     <a onClick={() => navigate('/')} style={{ cursor: "pointer" }}><h3>E-GO</h3></a>

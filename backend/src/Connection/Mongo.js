@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 
 import dotenv from 'dotenv';
 
-import conf from '../Config/test.json' assert { type: "json" };
+import conf from '../Config/defaultConfig.json' assert { type: "json" };
 
 const mongConnection = () => {
     const conn_url = conf.mongo.url;

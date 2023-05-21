@@ -10,7 +10,7 @@ const stripeInstance = stripe(Secret_Key);
 const paymentController = async (req, res) => {
 
     console.log(req.body)
-    const data=req.body
+    const data = req.body
     // Create a PaymentMethod with the provided card details
     const paymentMethod = await stripeInstance.paymentMethods.create({
         type: 'card',
@@ -38,14 +38,14 @@ const paymentController = async (req, res) => {
             confirm: true,
         });
 
-        console.log("payment intent :",paymentIntent)
+        console.log("payment intent :", paymentIntent)
     }).then((charge) => {
         res.send("Success")  // If no error occurs
     })
-    .catch((err) => {
-        res.send(err)       // If some error occurs
-    });
-  };
+        .catch((err) => {
+            res.send(err)       // If some error occurs
+        });
+};
 
 
 export default paymentController

@@ -13,6 +13,7 @@ import Products from './Products';
 import Cart from './Cart';
 import PaymentPage from './Wrapper';
 import Locate from './Locate'
+import UnlockBike from './UnlockBike';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path='/products' element={<Products/>}/>
             <Route path='/cart' element={<Cart/>}/>
             <Route path='/locate_bike' element={<Locate/>}/>
+            <Route path='/unlock_bike' element={<UnlockBike/>}/>
         </Routes>
       </Router>
     </div>

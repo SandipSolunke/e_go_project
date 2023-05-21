@@ -2,6 +2,8 @@
     "api": {
         "paymentApi": "http://localhost:5000/payment",
         "userApi": "http://localhost:5000/user/",
-        "resApi": "http://localhost:5000/response"
+        "resApi": "http://localhost:5000/response",
+        "bikeLocationApi": "http://localhost:5000/bike",
+        "bikeApi":"http://192.168.48.222:80"
     }
 }
