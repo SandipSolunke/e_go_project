@@ -4,6 +4,8 @@ import { useState } from "react";
 import cartApi from "./Api/CartApi";
 import { useNavigate } from "react-router-dom";
 import Footer from './Footer'
+import about_2 from '../Images/about2.png'
+import about_3 from '../Images/about3.png'
 
 
 const Products = () => {
@@ -27,10 +29,9 @@ const Products = () => {
     };
 
     const products = [
-        { id: "product_1", name: "Product 1", price: "10000", more_info: "more info" },
-        { id: "product_2", name: "Product 2", price: "250000", more_info: "more info" },
-        { id: "product_3", name: "Product 3", price: "90000", more_info: "more info" },
-        { id: "product_4", name: "Product 4", price: "8000", more_info: "more info" },
+        { id: "product_1", name: "Product 1", price: "10000", more_info: "Visit about page",Image:about_2 },
+        { id: "product_2", name: "Product 2", price: "250000", more_info: "Visit about page",Image:about_3 },
+      
     ];
 
     return (
@@ -51,7 +52,7 @@ const Products = () => {
                                     <button onClick={() => setExpandedProduct(null)}>Close</button>
                                 </div>
                             ) : (
-                                <button onClick={() => setExpandedProduct(product.id)}>
+                                <button onClick={() => setExpandedProduct(product.id,1)}>
                                     More Info
                                 </button>
                             )}

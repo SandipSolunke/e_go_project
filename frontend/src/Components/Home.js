@@ -34,7 +34,7 @@ const Home = () => {
             <Header />
             <div id="clients" style={{ marginBottom: "100px",backgroundColor:"rgb(162, 221, 201)" }}>
                 <h1>Our Clients</h1>
-                <p className="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus doloribus nihil, fuga quisquam repudiandae eveniet error voluptatem odio.</p>.container
+                <p className="lead">Serving the best for the best !</p>
                 <div className="clients_container">
                     <div><img src={client_img_1} alt="" /></div>
                     <div><img src={client_img_2} alt="" /></div>

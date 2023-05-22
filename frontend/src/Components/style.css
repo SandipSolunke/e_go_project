@@ -360,7 +360,8 @@ header{
 }
 /*===========================FOoter===================*/
 footer{
-    background: var(--color-primary);
+    /* background: var(--color-primary); */
+    background-color: #000f37;
     padding-top: 5rem;
     font-size: 0.9rem;
     color: rgba(255,255,255,0.8);
@@ -556,6 +557,7 @@ footer ul li a:hover{
     .testimonial_container{
         grid-template-columns: 1fr;
         gap: 1rem;
+        
     }
     /*==========================download app===================*/
     #downloadapp{

@@ -7,8 +7,8 @@ const Header = () => {
         <div>
             <header>
                 <div className="container container_header">
-                    <h1 className="header_title">E-GO! <br/>Application</h1>
-                    <p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam odio consectetur suscipit architecto nobis placeat repellat ratione incidunt nemo nisi. Recusandae.</p>
+                    <h1 className="header_title">WELCOME TO <br/>E-GO</h1>
+                    <p className="lead">MOBILITY AS A SERVICE.</p>
                     <div className="header_img">
                         <img src={hero_img} alt=""/>
                     </div>
