@@ -32,7 +32,7 @@ const Faq = (props) => {
                     <aricle class="faq">
                         <span class="faq_icon"><i class="uil uil-plus"></i></span>
                         <div class="faq_question-answer">
-                            <h4 class="faq_question">How does this work?</h4>
+                            <h4 class="faq_question">any chargers to register in website?</h4>
                             <p class="faq_answer">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore fugit odit quod veritatis aut temporibus cupiditate eaque ad?</p>
                         </div>
 
@@ -40,14 +40,14 @@ const Faq = (props) => {
                     <aricle class="faq">
                         <span class="faq_icon"><i class="uil uil-plus"></i></span>
                         <div class="faq_question-answer">
-                            <h4 class="faq_question">How does this work?</h4>
+                            <h4 class="faq_question">How to register in this website ?</h4>
                             <p class="faq_answer">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore fugit odit quod veritatis aut temporibus cupiditate eaque ad?</p>
                         </div>
                 </aricle>
                 <aricle class="faq">
                     <span class="faq_icon"><i class="uil uil-plus"></i></span>
                     <div class="faq_question-answer">
-                        <h4 class="faq_question">How does this work?</h4>
+                        <h4 class="faq_question">How to do payment?</h4>
                         <p class="faq_answer">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore fugit odit quod veritatis aut temporibus cupiditate eaque ad?</p>
                     </div>
 
@@ -55,37 +55,14 @@ const Faq = (props) => {
                 <aricle class="faq">
                     <span class="faq_icon"><i class="uil uil-plus"></i></span>
                     <div class="faq_question-answer">
-                        <h4 class="faq_question">How does this work?</h4>
+                        <h4 class="faq_question">Any age restrictions?</h4>
                         <p class="faq_answer">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore fugit odit quod veritatis aut temporibus cupiditate eaque ad?</p>
                     </div>
 
                 </aricle>
-                <aricle class="faq">
-                    <span class="faq_icon">
-                        <i class="uil uil-plus"></i></span>
-                    <div class="faq_question-answer">
-                        <h4 class="faq_question">How does this work?</h4>
-                        <p class="faq_answer">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore fugit odit quod veritatis aut temporibus cupiditate eaque ad?</p>
-                    </div>
-                </aricle>
-                <aricle class="faq">
-                    <span class="faq_icon">
-                        <i class="uil uil-plus"></i></span>
-                    <div class="faq_question-answer">
-                        <h4 class="faq_question">How does this work?</h4>
-                        <p class="faq_answer">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore fugit odit quod veritatis aut temporibus cupiditate eaque ad?</p>
-                    </div>
-
-                </aricle>
-                <aricle class="faq ">
-                    <span class="faq_icon"></span>
-                    <i class="uil uil-plus"></i>
-                    <div class="faq_question-answer">
-                        <h4 class="faq_question">How does this work?</h4>
-                        <p class="faq_answer">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore fugit odit quod veritatis aut temporibus cupiditate eaque ad?</p>
-                    </div>
-
-                </aricle>
+                
+               
+               
             </div>
         </div >
         <Footer/>

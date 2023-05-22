@@ -14,7 +14,7 @@ const Footer = () => {
 
                         <a onClick={()=>navigate('/')} style={{cursor:"pointer"}} className="footer_logo"><h3>E-GO</h3></a>
 
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corpasfs</p>
+                        <p>For any queries</p>
                         <div className="footer_subscribe">
                             <input type="email" placeholder="Enter Email" required />
                             <button type="submit"><i className="uil uil-arrow-right"></i></button>
@@ -23,7 +23,7 @@ const Footer = () => {
 
                     </div>
                     <div className="footer2">
-                        <p>Perma Links</p>
+                        {/* <p>Perma Links</p> */}
                         <ul className="permalinks">
                             <li><a onClick={()=>navigate('/')} style={{cursor:"pointer"}}>Home</a></li>
                             <li><a onClick={()=>navigate('/about')} style={{cursor:"pointer"}}>About</a></li>
@@ -44,8 +44,8 @@ const Footer = () => {
                     <div className="footer4">
                         <h4>Contact US</h4>
                         <p>
-                            +91 8787457454 <br />
-                            xyzacb@gmailo.com
+                            +91 9552576768 <br />
+                            directorEgo@gmail.com
                         </p>
                         <ul className="footer_socials">
                             <li><a href="" target="_blank"><i className="uil uil-facebook"></i></a></li>
