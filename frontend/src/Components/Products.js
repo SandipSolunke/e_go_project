@@ -29,8 +29,8 @@ const Products = () => {
     };
 
     const products = [
-        { id: "product_1", name: "Product 1", price: "10000", more_info: "Visit about page",Image:about_2 },
-        { id: "product_2", name: "Product 2", price: "250000", more_info: "Visit about page",Image:about_3 },
+        { id: "product_1", name: "MASTI", price: "35000", more_info: "Visit about page",Image:about_2 },
+        { id: "product_2", name: "TANGO", price: "40000", more_info: "Visit about page",Image:about_3 },
       
     ];
 
@@ -43,6 +43,7 @@ const Products = () => {
                 {products.map((product) => (
                     <div key={product.id} className="product">
                         <h2>{product.name}</h2>
+                        <img src={product.Image}></img>
                         <p>{product.price}</p>
 
                         <div className="product-buttons">
